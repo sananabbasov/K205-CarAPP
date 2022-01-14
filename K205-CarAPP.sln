@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K205-CarAPP", "K205-CarAPP\K205-CarAPP.csproj", "{6BF327C3-27EB-4C92-9280-2D51CB8A4DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF327C3-27EB-4C92-9280-2D51CB8A4DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF327C3-27EB-4C92-9280-2D51CB8A4DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF327C3-27EB-4C92-9280-2D51CB8A4DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF327C3-27EB-4C92-9280-2D51CB8A4DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F1A90D7-405C-4640-88D1-E289D31E0368}
+	EndGlobalSection
+EndGlobal
