@@ -12,5 +12,6 @@ namespace K205_CarAPP.Models
         public string Name { get; set; }
         public decimal BenzinTutumu { get; set; } // Bak hecmi
         public decimal Benzin { get; set; } // Bak benzin miqdari
+        public decimal Yurus { get; set; }
     }
 }

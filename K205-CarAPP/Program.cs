@@ -8,7 +8,8 @@ Car bmw = new Car() {
     Id = 1,
     Name = "BMW M5",
     Benzin = 100,
-    BenzinTutumu = 200
+    BenzinTutumu = 200,
+    Yurus = 0
 
 };
 
@@ -24,7 +25,7 @@ Console.WriteLine("1. Yola cix");
 Console.WriteLine("2. Benzin doldur");
 Console.WriteLine("3. Yanacaq miqdari");
 Console.WriteLine("4. Yurus");
-Console.WriteLine("5. Cixis");
+Console.WriteLine("5. Masin info");
 
 string daxilEdilenReqem = Console.ReadLine();
 
@@ -49,7 +50,8 @@ switch (Convert.ToInt32(daxilEdilenReqem))
         Console.WriteLine("4. Yurus");
         break;
     case 5:
-        Console.WriteLine("5. Cixis");
+        carManager.MasinInfo(bmw);
+        goto Evvele;
         break;
     default:
         Console.WriteLine("Dogru reqem daxil edin.");
