@@ -1,4 +1,23 @@
 ﻿using K205_CarAPP.Methods;
+using K205_CarAPP.Models;
+
+CarManager carManager = new();
+
+
+Car bmw = new Car() { 
+    Id = 1,
+    Name = "BMW M5",
+    Benzin = 100,
+    BenzinTutumu = 200
+
+};
+
+
+//Car nissan = new Car() { 
+//    Benzin = 200
+//};
+
+// Benzin - 100 ; Bezin - 10 = 90 | Benzin - 90
 
 Evvele:
 Console.WriteLine("1. Yola cix");
@@ -11,20 +30,16 @@ string daxilEdilenReqem = Console.ReadLine();
 
 
 
-Go start = new Go();
-
-
-decimal benzin = 100M;
 
 
 switch (Convert.ToInt32(daxilEdilenReqem))
 {
     case 1:
-        start.HereketeBasla(benzin);
+        carManager.HereketeBasla(bmw);
         goto Evvele;
         break;
     case 2:
-        start.BenzinDoldur(benzin);
+        carManager.BenzinDoldur(bmw);
         goto Evvele;
         break;
     case 3:
