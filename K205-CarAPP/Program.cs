@@ -9,7 +9,8 @@ Car bmw = new Car() {
     Name = "BMW M5",
     Benzin = 100,
     BenzinTutumu = 200,
-    Yurus = 0
+    Yurus = 0,
+    GedisHaqqi = 1
 
 };
 
@@ -23,7 +24,7 @@ Car bmw = new Car() {
 Evvele:
 Console.WriteLine("1. Yola cix");
 Console.WriteLine("2. Benzin doldur");
-Console.WriteLine("3. Yanacaq miqdari");
+Console.WriteLine("3. Odenis miqdari");
 Console.WriteLine("4. Yurus");
 Console.WriteLine("5. Masin info");
 

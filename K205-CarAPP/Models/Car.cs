@@ -13,5 +13,7 @@ namespace K205_CarAPP.Models
         public decimal BenzinTutumu { get; set; } // Bak hecmi
         public decimal Benzin { get; set; } // Bak benzin miqdari
         public decimal Yurus { get; set; }
+        public decimal GedisHaqqi { get; set; }
+        public decimal Qazanc { get; set; }
     }
 }

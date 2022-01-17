@@ -21,10 +21,13 @@ namespace K205_CarAPP.Methods
             }
             else // true
             {
+                decimal odenis = car.GedisHaqqi * Convert.ToDecimal(yol) / 100;
                 car.Yurus += (Convert.ToDecimal(yol)); // 0 + 200 = 200 | 200 + 300 = 500
                 car.Benzin -= netice; // 100 - 20 = 80 | 80 - 30 = 50 
+                car.Qazanc += odenis;
                 Console.WriteLine("Sizin" + " " + car.Benzin + " litr benzininiz qaldi.");
-                
+                Console.WriteLine("Odenilecek mebleg: " + odenis + " AZN");
+
 
             }
 
@@ -56,13 +59,21 @@ namespace K205_CarAPP.Methods
 
         }
 
+        public void OdenisHesablama(Car car)
+        {
+            Console.WriteLine("100Km-ya odenis teyin edin.");
+            string odenisTeyini = Console.ReadLine();
 
+            car.GedisHaqqi = Convert.ToDecimal(odenisTeyini);
+            
+        }
 
         public void MasinInfo(Car car)
         {
             Console.WriteLine("Masin adi: " + car.Name);
             Console.WriteLine("Benzin: " + car.Benzin + " litr");
             Console.WriteLine("Benzin tutumu: " + car.BenzinTutumu + " litr");
+            Console.WriteLine("Qazanilan mebleg: " + car.Qazanc + " AZN");
             Console.WriteLine("Yurus: " + car.Yurus + " km | " + car.Yurus / 1.6M + " mil");
         }
     }
